@@ -1,0 +1,267 @@
+:root {
+    --font-f: 'Fraunces', serif;
+    --font-l: 'Lato', sans-serif;
+    --font-o: 'Oswald', sans-serif;
+    --cor-1: #c4a47c;
+    --cor-2: #fff;
+    --cor-3: #000000;
+    --cor-4: #604829;
+    --cor-5: #666;
+    --cor-7: #ACACAC; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100vh;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    position: fixed;
+
+    width: 100%;
+    padding: 5px;
+    
+    background-color: var(--cor-4);
+
+    font-family: var(--font-o);
+    font-size: 18px;
+}
+
+.topo nav {
+    display: flex;
+    gap: 15%;
+}
+
+.topo a{
+    text-decoration: none;
+    text-shadow: 2px 3px 2px var(--cor-3);
+    color: var(--cor-1);
+}
+
+.logo {
+    width: 100px;;
+}
+
+#banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: url('../images/parallax-imagem1.png') fixed no-repeat;
+    background-size: cover;
+
+    font-family: var(--font-f);
+    color: var(--cor-2);
+    font-size: 100px;
+    font-weight: lighter;
+
+    text-align: center;
+    height: 100vh;
+}
+
+.container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--cor-2);
+
+    padding: 80px 0px;
+}
+
+.container-text h2 {
+    font-family: var(--font-o);
+    font-size: 18px;
+    color: var(--cor-1);
+}
+
+.container-text p {
+    font-family: var(--font-l);
+    font-size: 16px;
+    color: var(--cor-5);
+
+    max-width: 1024px;
+}
+
+.container-img {
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-img h3{
+    font-family: var(--font-f);
+    font-size: 24px;
+    color: var(--cor-2);
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+
+    background-color: var(--cor-4);
+
+    width: 500px;
+    padding: 10px;
+}
+
+#img-1{
+    background: fixed url('../images/parallax-imagem2.jpg') no-repeat top center;
+    background-size: cover;
+}
+
+#img-2 {
+    background: fixed url('../images/parallax-imagem3.jpg') no-repeat top center; 
+    background-size: cover;
+}
+
+#contatos {
+    background: fixed url('../images/parallax-imagem4.png') no-repeat top center;
+    background-size: cover;
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contatos h2{
+    font-family: var(--font-o);
+    font-size: 24px;
+    background-color: #604829;
+    color: var(--cor-2);
+    text-align: center;
+
+    width: 500px;
+
+    padding: 10px;
+    margin-top: 10%;
+}
+
+.frame-maps {
+    width: 1024px;
+    height: 450px;
+}
+
+.box-contatos{
+    background-color: var(--cor-4);
+
+    width: 500px;
+
+    padding: 10px;
+    margin-bottom: 8%;
+
+    text-align: center;
+}
+
+.box-contatos p{
+    font-family: var(--font-o);
+    font-size: 16px;
+    color: var(--cor-2);
+}
+
+#horarios {
+    background: fixed url('../images/cafeteria.jpg') no-repeat top center;
+    background-size: cover;
+
+    height: 85vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    
+}
+
+#horarios h2{
+    font-family: var(--font-o);
+    font-size: 18px;
+    color: var(--cor-2);
+
+    margin-top: 10%;
+}
+
+#horarios ul{
+    width: 768px;
+
+    position: absolute;
+    bottom: 40%;
+
+    list-style: none;
+}
+
+#horarios li{
+    font-family: var(--font-o);
+    font-size: 16px;
+
+    position: relative;
+}
+
+#horarios li div{
+    width: 70%;
+    height: 1px;
+    background-color: var(--cor-7);
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 50%;
+}
+
+#horarios li h3, .rodape p{
+    color: var(--cor-2);
+}
+
+#horarios li span, .rodape span {
+    color: var(--cor-1);
+}
+
+#horarios li span{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#horarios li p {
+    color: var(--cor-7);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.rodape {
+    background-color: var(--cor-3);
+    font-family: var(--font-l);
+    font-size: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px 0px;
+
+    position: relative;
+}
+
+.link-rodape {
+
+    position: absolute;
+    
+    bottom: 45px;
+    right: 50px;
+}
